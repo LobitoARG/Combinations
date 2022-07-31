@@ -1,6 +1,6 @@
 # Combinations
 
-Enlace al tablero de trabajo: https://sharing.clickup.com/l/h/7-36075579-1/15c2f6eb610fa0c
+Trello link:
 
 ## Objetive: 
 This website has the functionality of calculating mathematical combinations, permutations and variations.
