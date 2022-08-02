@@ -1,6 +1,6 @@
 # Combinations
 
-Trello link:
+Trello link: https://trello.com/combinations1
 
 ## Objetive: 
 This website has the functionality of calculating mathematical combinations, permutations and variations.
