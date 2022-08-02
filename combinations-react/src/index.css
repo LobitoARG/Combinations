@@ -8,3 +8,46 @@
         hover:bg-transparent hover:text-indigo-600 rounded-md
     }
 }
+
+
+/* Section Q&A */
+
+.title-questions{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 50px 0 20px 0;
+    color:hsl(202, 84%, 15%);
+}
+
+.questions-section{
+    font-family: 'Montserrat', sans-serif;
+    width: 33%;
+    margin: 0 auto;
+}
+
+.question-block{
+    padding: 50px 0 0 0;
+}
+
+.question{
+    font-size: 1.5em;
+    font-weight: 500;
+    color:hsl(202, 84%, 15%);
+}
+
+.question::after{
+    content: '';
+    display: block;
+    /* margin: 0 auto; */
+    width: 24px;
+    padding-top: 8px;
+    border-bottom: 4px solid rgb(26, 147, 218);
+    opacity: 0.6;
+}
+
+.answer{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 30px 0 0 0;
+    color:hsl(202, 12%, 42%)
+}
