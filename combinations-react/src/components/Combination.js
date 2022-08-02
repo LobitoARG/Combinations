@@ -20,6 +20,5 @@ export default function Combination() {
         <h2 className='text-center'>Result: 100</h2>
       </div>
     </div>
-    
   )
 }
