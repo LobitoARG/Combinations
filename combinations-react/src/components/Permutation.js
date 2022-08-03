@@ -32,25 +32,36 @@ export default function Permutation()
   }
   
   return (
-    <>
-    <div className='bg-green-200'>
-    <div className='flex justify-around mt-5'>
-      <form onSubmit={submitHandler}>
-      <h2 className='text-center'>Total number (n)</h2>
-      <input type='number' name='total'></input>
+  <>
+  <div className='calc-box'>
+    <form onSubmit={submitHandler}>
 
-      <h2 className='text-center'>Group number (r)</h2>
-      <input type='number' name='total2'></input>
-      <button className='px-5 py-2' type='submit'>Calculate</button>
-      </form>
+      <div className='numbers'>
 
-    <div className='border-solid pb-5 w-screen mt-5'>
-      <h2 className='text-center'>Result:{result}</h2>
-    </div>
-    </div>
-    </div>
+        <div>
+          <h2>Total number (n)</h2>
+          <input type='number' name='total'></input>
+        </div>
 
-    </>
+        <div>
+          <h2>Group number (r)</h2>
+          <input type='number' name='total2'></input>
+        </div>
+
+      </div>
+
+        <div className='calculate-button'>
+          <button type='submit'>CALCULATE</button>
+        </div>
+
+    </form>
+  </div>
+
+  <div className='div-result'>
+        <h2 className='result'>Result: {result}</h2>
+  </div>
+  
+  </>
     
   )
 }
