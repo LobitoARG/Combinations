@@ -20,7 +20,7 @@
 
 .main-app{
     height: 100vh;
-    background-color: rgb(169, 212, 236);
+    background-color: rgb(169, 209, 236);
 }
 
 .main-div{
@@ -60,9 +60,23 @@
 }
 
 .options{
-    background-color: red;
+    padding: 0 0 15px 0;
+    max-width: 500px;
+    margin: 0 auto;
     display: flex;
     justify-content:space-between;
+}
+
+.options button{
+    padding: 15px;
+    width: 10em;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(202, 84%, 10%);
+    font-weight: 600;
 }
 
 
@@ -106,7 +120,7 @@
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-}
+    box-shadow: hsla(226, 84%, 10%, 0.034) 0px 6px 0px;}
 
 .result{
     margin: 0 auto;
