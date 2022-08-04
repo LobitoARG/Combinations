@@ -33,6 +33,7 @@ function App() {
       <footer className='footer-box'>
         <Footer/>
       </footer>
+
  </>
   );
 }
