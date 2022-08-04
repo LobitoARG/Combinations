@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -7,38 +7,182 @@
         @apply text-white border bg-indigo-600 border-indigo-600
         hover:bg-transparent hover:text-indigo-600 rounded-md
     }
+} */
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
 
+
+/* MAIN */
+
+.main-app{
+    height: 100vh;
+    background-color: rgb(169, 209, 236);
+}
+
+.main-div{
+    width: 95%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.nav-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: solid 1px hsla(201, 12%, 42%, 0.384);
+}
+
+.logo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    margin:0;
+    padding:0;
+    color:hsl(202, 84%, 10%);
+}
+
+
+.settings button{
+    padding: 8px;
+    font-size: 20px;
+    color:hsl(202, 84%, 10%);
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 5px;
+}
+
+.settings button:first-child{
+    margin-right: 10px;
+}
+
+.options{
+    padding: 0 0 15px 0;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+}
+
+.options button{
+    padding: 15px;
+    width: 10em;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(202, 84%, 10%);
+    font-weight: 600;
+}
+
+
+/* Main Calc */
+
+.main-calc{
+    margin: 30px auto 0 auto;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+.numbers{
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: hsl(202, 84%, 10%);
+    margin: 0 auto;
+}
+
+.numbers div input{
+    padding: 8px;
+    width: 180px;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    border:none;
+}
+
+.calculate-button{
+    text-align: center;
+}
+
+.calculate-button button{
+    background-color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    margin: 40px 0 0 0;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    box-shadow: hsla(226, 84%, 10%, 0.034) 0px 6px 0px;}
+
+.result{
+    margin: 0 auto;
+    padding: 10px 0 100px 15px;
+    background-color: rgb(255, 255, 255);
+    max-width: 500px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.div-result{
+    padding: 20px 0;
+}
+
+.calc-box{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 80px 40px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.dont-know{
+    font-size: 16px;
+    margin: 50px 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration:underline;
+    text-align: center;
+    color:hsl(202, 84%, 15%);
+}
 
 /* Section Q&A */
 
 .title-questions{
-    font-size: 2rem;
+    font-size: 1.5em;
     font-weight: 600;
-    padding: 50px 0 20px 0;
+    padding-top: 20px;
     color:hsl(202, 84%, 15%);
 }
 
 .questions-section{
     font-family: 'Montserrat', sans-serif;
-    width: 33%;
+    width: 95%;
+    max-width: 650px;
     margin: 0 auto;
 }
 
 .question-block{
-    padding: 50px 0 0 0;
+    padding: 40px 0 0 0;
 }
 
 .question{
-    font-size: 1.5em;
-    font-weight: 500;
+    font-size: 1.4em;
+    font-weight: 600;
     color:hsl(202, 84%, 15%);
 }
 
 .question::after{
     content: '';
     display: block;
-    /* margin: 0 auto; */
     width: 24px;
     padding-top: 8px;
     border-bottom: 4px solid rgb(26, 147, 218);
@@ -46,8 +190,60 @@
 }
 
 .answer{
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
-    padding: 30px 0 0 0;
+    padding: 25px 0 0 0;
     color:hsl(202, 12%, 42%)
+}
+
+
+/* Section Footer */
+
+.footer-box{
+    margin-top: 5
+    0px;
+}
+
+.div-footer-box{
+    text-align: center;
+    border-top: solid 1px hsla(201, 12%, 42%, 0.384);
+    margin-top: 30px;
+    padding: 20px 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fa-github{
+    font-size: 2.7em;
+    color: black;
+}
+
+
+.all-rights{
+    margin: 20px 0;
+    font-weight: 400;
+    font-size: 12px;
+    color:hsl(202, 12%, 32%)
+}
+
+.made-by{
+    margin: 20px 0;
+    font-size: 15px;
+    color:hsl(202, 84%, 15%);
+}
+
+.alejandro, .valentina{
+    color: rgb(26, 147, 218);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+
+
+/* Responsive Design */
+
+@media (min-width: 450px){
+
+
 }

@@ -1,13 +1,17 @@
 import Main from './components/Main'
 import './index.css'
 import Questions from './components/Questions'
+import Footer from './components/Footer'
 
 function App() {
   return (
   <>
-    <Main/>
+    <div className='main-app'>
+      <Main/>
+    </div>
+    
     <section className='questions-section'>
-          <h1 className='title-questions'>Combinatorics have never been easier</h1>
+          <h1 className='title-questions' id="question-title">Combinatorics have never been easier</h1>
           < Questions
           question = "What is Combinatorics?"
           answer = "Combinatorics is an area of mathematics primarily concerned with counting, both as a means and an end in obtaining results, and certain properties of finite structures. It is closely related to many other areas of mathematics and has many applications ranging from logic to statistical physics and from evolutionary biology to computer science."
@@ -25,6 +29,11 @@ function App() {
           answer = "Variations are arrangements of selections of objects with or without repetition, where the order of the selected objects matters."
           />
       </section>
+
+      <footer className='footer-box'>
+        <Footer/>
+      </footer>
+
  </>
   );
 }
