@@ -7,14 +7,10 @@ import Options from './Options'
 import {Routes, Route} from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 
-const lngs = {
-  en: { nativeName: 'English' },
-  es: { nativeName: 'Español' }
-};
 
 export default function Main() {
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
 
   return (

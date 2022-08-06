@@ -2,14 +2,10 @@ import React from 'react'
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const lngs = {
-  en: { nativeName: 'English' },
-  es: { nativeName: 'Español' }
-};
 
 export default function Permutation() 
 {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const [result, setResult] = useState(['']);
 
