@@ -14,6 +14,7 @@ export default function Footer() {
         <p className='made-by'>{t('footer.made')}<a target="_blank" href="https://www.linkedin.com/in/alejandro-j-3397a6144/" className='alejandro'>Alejandro</a> {t('footer.and')} <a target="_blank" href="https://www.linkedin.com/in/valentina-latyn/" className='valentina'>Valentina</a></p>
 
         <p className='all-rights'>{t('footer.rights')}</p>
+        
     </div>
   )
 }
