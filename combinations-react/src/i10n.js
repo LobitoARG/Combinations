@@ -20,12 +20,9 @@ i18n
   .init({
     fallbackLng: 'en',
     debug: true,
-    interpolation: {
-      escapeValue: false,
-    },
     detection: {
       order: ['cookie', 'localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
-      caches: ['cookies']
+      caches: ['cookie'],
     },
     backend: {
       loadPath: '/assets/locales//{{lng}}/translation.json'
