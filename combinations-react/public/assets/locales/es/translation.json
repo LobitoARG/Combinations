@@ -1,0 +1,38 @@
+
+{ 
+    "questions" : {
+                      "title":"La Combinatoria jamás ha sido tan fácil",
+                      "first": "¿Qué es la Combinatoria?",
+                      "second": "¿Qué es Combinación?",
+                      "third": "¿Qué es la Permutación?",
+                      "forth": "¿Qué es la Variación?"
+    },
+  
+    "answers": {
+                "first": "La combinatoria es un área de las matemáticas que se ocupa principalmente del conteo, tanto como un medio como un fin para obtener resultados, y ciertas propiedades de las estructuras finitas. Está estrechamente relacionado con muchas otras áreas de las matemáticas y tiene muchas aplicaciones que van desde la lógica hasta la física estadística y desde la biología evolutiva hasta la informática.",
+                "second": "Una combinación es una técnica matemática que determina el número de arreglos posibles en una colección de elementos donde el orden de la selección no importa. En combinaciones, puede seleccionar los artículos en cualquier orden.",
+                "third":  "Una permutación es un cálculo matemático de la cantidad de formas en que se puede organizar un conjunto en particular, donde el orden del arreglo es importante.",
+                "forth": "Las variaciones son arreglos de selecciones de objetos con o sin repetición, donde importa el orden de los objetos seleccionados."
+    },
+  
+    "footer": {
+                "made": "Creado por ",
+                "and": "y",
+                "rights": "@Combinados 2022. Todos los derechos reservados."
+    },
+  
+    "options": {
+                "one": "Combinación",
+                "two": "Permutación",
+                "three": "Variación",
+                "choose": "¿No sabes cuál es la opción correcta para tí?"
+      },
+  
+    "calc": {
+              "totalNumber": "Número Total (n)",
+              "groupNumber": "Número del Grupo (r)",
+              "button": "CALCULAR",
+              "result": "Resultado:" 
+    }
+}
+
