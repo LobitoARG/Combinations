@@ -32,5 +32,6 @@
                 "groupNumber": "Group Number (r)",
                 "button": "CALCULATE",
                 "result": "Result:" 
-      }
+      },
+      "language" : "Language"
 }
