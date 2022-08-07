@@ -8,6 +8,9 @@ import HttpApi from 'i18next-http-backend';
 import 'bootstrap/dist/js/bootstrap.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+/* import 'flag-icon-css/css/flag-icon.min.css'; */
+
+
 i18n
   .use(Backend)
 
@@ -22,13 +25,12 @@ i18n
     fallbackLng: 'en',
     debug: true,
     detection: {
-      order: ['cookie', 'localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
+      order: ['path', 'cookie', 'localStorage', 'navigator', 'htmlTag', 'subdomain'],
       caches: ['cookie'],
     },
     backend: {
       loadPath: '/assets/locales//{{lng}}/translation.json'
-    },
-    react : {useSuspense : false},
+    }
   });
 
                               

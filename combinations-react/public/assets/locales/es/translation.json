@@ -33,6 +33,7 @@
               "groupNumber": "Número del Grupo (r)",
               "button": "CALCULAR",
               "result": "Resultado:" 
-    }
+    },
+    "language": "Idioma"
 }
 

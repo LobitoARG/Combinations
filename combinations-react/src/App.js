@@ -4,18 +4,32 @@ import Questions from './components/Questions'
 import Footer from './components/Footer'
 import { createContext, useState} from 'react'
 import { useTranslation } from 'react-i18next'
+import i18next from 'i18next'
+import cookies from 'js-cookie'
 
-const lngs = {
-  en: { nativeName: 'English' },
-  es: { nativeName: 'Español' }
-};
+const languages = [
+  {
+  code : 'en',
+  name : 'English',
+  country_code : 'gb'
+  },
+  {
+    code : 'es',
+    name : 'Español',
+    country_code : 'es'
+  },
+]
+
+document.title = 'Combinados';
 
 
 export const ThemeContext = createContext(null)
 
 function App() {
 
-  const { t, i18n } = useTranslation();
+  const currentLanguageCode = cookies.get('i18next') || 'en';
+
+  const { t } = useTranslation();
 
   const [theme, setTheme] = useState("light");
 
@@ -27,24 +41,38 @@ function App() {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
   <>
     <div className='main-app' id={theme}>
-    
-        <div>
-          {Object.keys(lngs).map((lng) => (
-            <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-              {lngs[lng].nativeName}
-            </button>
-          ))}
-        </div>
 
     <div className = 'main-div'>
       <div className='nav-div'>
         <h1 className='logo'>Combinados</h1>
+
         <div className='settings'>
-        <button><i onClick={toggleTheme} class="fa-solid fa-circle-half-stroke"></i></button>
-        <button><i class="fa-solid fa-globe"></i></button>
+        <button><i onClick={toggleTheme} className="fa-solid fa-circle-half-stroke"></i></button>
+
+        <div className="dropdown">
+          <button className="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i className="fa-solid fa-globe"></i>
+          </button>
+
+          <ul className="dropdown-menu">
+
+            <li><span className='dropdown-item-text'>{t('language')}</span></li>
+            
+            {languages.map(({code, name, country_code}) => (
+              <li key={country_code}>
+                <button className="dropdown-item" onClick={() => i18next.changeLanguage(code)} disabled={code === currentLanguageCode}>
+                  <span className={`flag-icon flag-icon-${country_code} mx 2`}></span>
+                  {name}
+                </button>
+              </li>
+            ))}
+
+          </ul>
+        </div>
+        
         </div>
       </div>
-      <Main/>
+        <Main/>
       </div>
     </div>
     
