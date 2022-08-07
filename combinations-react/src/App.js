@@ -11,7 +11,6 @@ const lngs = {
 };
 
 
-
 export const ThemeContext = createContext(null)
 
 function App() {
