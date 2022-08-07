@@ -3,14 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 export default function Options() {
 
-/*     const buttonComb = document.getElementById('button-comb');
-
-    buttonComb.addEventListener('click', () => {
-    alert('holaa!');
-    buttonComb.style.color = "red";
-  }); */
-
-
+    
   return (
     <>
     <div className="options">
