@@ -1,8 +1,8 @@
+import Main from './components/Main'
 import './index.css'
 import Questions from './components/Questions'
 import Footer from './components/Footer'
 import { createContext, useState} from 'react'
-import Main from './components/Main'
 import { useTranslation } from 'react-i18next'
 
 const lngs = {
@@ -28,7 +28,7 @@ function App() {
   <>
     <div className='main-app' id={theme}>
     
-    <div>
+        <div>
           {Object.keys(lngs).map((lng) => (
             <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
               {lngs[lng].nativeName}
