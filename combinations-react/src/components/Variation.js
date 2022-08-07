@@ -1,8 +1,11 @@
 import React from 'react'
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
 
 export default function Variation() {
 
+  const { t, i18n } = useTranslation();
 
   const [result, setResult] = useState(['']);
 
@@ -43,26 +46,26 @@ export default function Variation() {
         <div className='numbers'>
   
           <div>
-            <h2>Total number (n)</h2>
+            <h2>{t('calc.totalNumber')}</h2>
             <input type='number' name='total'></input>
           </div>
   
           <div>
-            <h2>Group number (r)</h2>
+            <h2>{t('calc.groupNumber')}</h2>
             <input type='number' name='total2'></input>
           </div>
   
         </div>
   
           <div className='calculate-button'>
-            <button type='submit'>CALCULATE</button>
+            <button type='submit'>{t('calc.button')}</button>
           </div>
   
       </form>
     </div>
   
     <div className='div-result'>
-          <h2 className='result'>Result: {result} </h2>
+          <h2 className='result'>{t('calc.result')} {result} </h2>
     </div>
     
     </>
