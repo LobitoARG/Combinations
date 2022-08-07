@@ -5,6 +5,11 @@ import { createContext, useState} from 'react'
 import Main from './components/Main'
 import { useTranslation } from 'react-i18next'
 
+const lngs = {
+  en: { nativeName: 'English' },
+  es: { nativeName: 'Español' }
+};
+
 
 
 export const ThemeContext = createContext(null)
