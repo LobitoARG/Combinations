@@ -8,8 +8,6 @@ import HttpApi from 'i18next-http-backend';
 import 'bootstrap/dist/js/bootstrap.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-/* import 'flag-icon-css/css/flag-icon.min.css'; */
-
 
 i18n
   .use(Backend)

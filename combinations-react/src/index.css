@@ -58,8 +58,11 @@
 /* NAVBAR */
 .settings{
     display: flex;
-    
-} 
+}
+
+.flag-span{
+    padding: 0 5px 0 10px;
+}
 
 /* MAIN */
 
@@ -204,6 +207,10 @@
     text-decoration:underline;
     text-align: center;
     color:hsl(202, 84%, 15%);
+}
+
+.numbers h2{
+    font-size: 17px;
 }
 
 /* Section Q&A */

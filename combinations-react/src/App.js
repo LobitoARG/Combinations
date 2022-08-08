@@ -11,12 +11,14 @@ const languages = [
   {
   code : 'en',
   name : 'English',
-  country_code : 'gb'
+  country_code : 'gb',
+  img :"https://flagcdn.com/gb.svg"
   },
   {
     code : 'es',
     name : 'Español',
-    country_code : 'es'
+    country_code : 'es',
+    img :"https://flagcdn.com/es.svg"
   },
 ]
 
@@ -58,10 +60,14 @@ function App() {
 
             <li><span className='dropdown-item-text'>{t('language')}</span></li>
             
-            {languages.map(({code, name, country_code}) => (
+            {languages.map(({code, name, country_code, img}) => (
               <li key={country_code}>
                 <button className="dropdown-item" onClick={() => i18next.changeLanguage(code)} disabled={code === currentLanguageCode}>
-                  <span className={`flag-icon flag-icon-${country_code} mx 2`}></span>
+                  <span className='flag-span' style={{opacity: code === currentLanguageCode ? 0.5 : 1 }}>
+                  
+                  <img src={img} width="30" alt={name}></img>
+                  
+                  </span>
                   {name}
                 </button>
               </li>
