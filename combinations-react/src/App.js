@@ -84,22 +84,8 @@ function App() {
     
     <section className='questions-section'>
           <h1 className='title-questions' id="question-title">{t('questions.title')}</h1>
-          < Questions
-          question = {t('questions.first')}
-          answer = {t('answers.first')}
-          />
-          < Questions
-          question = {t('questions.second')}
-          answer = {t('answers.second')}
-          />
-          < Questions 
-          question = {t('questions.third')}
-          answer = {t('answers.third')}
-          />
-          < Questions 
-          question = {t('questions.forth')}
-          answer = {t('answers.forth')}
-          />
+
+          <Questions></Questions>
       </section>
 
       <footer className='footer-box'>

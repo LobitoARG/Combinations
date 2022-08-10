@@ -251,10 +251,54 @@
 .answer{
     font-size: 17px;
     font-weight: 400;
-    padding: 25px 0 0 0;
+    padding: 0;
+    margin: 40px 0;
     color:hsl(202, 12%, 42%)
 }
 
+.firstApple{
+    color:#121212;
+    margin: 0 15px;
+}
+
+.secondApple{
+    color: #607D8B;
+    margin: 0 15px;
+}
+
+.thirdApple{
+    color:#CFD8DC;
+    margin: 0 15px;
+}
+
+.div-apples{
+    font-size: 60px;
+    text-align: center;
+}
+
+.div-apples ul, .div-apples ul li{
+    margin:0;
+    padding:0;
+}
+
+.list-apples-div ul{
+    list-style: none;
+}
+
+.list-apples-div{
+    display: grid;
+    grid-template-columns: 5% 12% 12% 12% 8% 5% 12% 12% 12%;
+    grid-gap: 10px;
+    max-width:650px;
+    margin: 0 auto;
+}
+
+.list-numbers{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 /* Section Footer */
 
