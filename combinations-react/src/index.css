@@ -248,12 +248,27 @@
     opacity: 0.6;
 }
 
-.answer{
+.answer, .answer_explanation{
     font-size: 17px;
     font-weight: 400;
     padding: 0;
     margin: 40px 0;
     color:hsl(202, 12%, 42%)
+}
+
+.answer_explanation::before{
+    content: '';
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-top: solid 4px rgb(26, 147, 218);
+    opacity: 0.6;
+}
+
+.seis-formas{
+    font-size: 100spx;
+    color: pink;
 }
 
 .firstApple{

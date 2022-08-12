@@ -19,6 +19,7 @@ i18n
   .use(HttpApi)
 
   .init({
+/*     transSupportBasicHtmlNodes: true, */
     supportedLngs: ['en', 'es'],
     fallbackLng: 'en',
     debug: true,
