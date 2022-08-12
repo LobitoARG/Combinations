@@ -1,18 +1,30 @@
 
 { 
     "questions" : {
-                      "title":"La Combinatoria jamás ha sido tan fácil",
-                      "first": "¿Qué es la Combinatoria?",
-                      "second": "¿Qué es Combinación?",
-                      "third": "¿Qué es la Permutación?",
-                      "forth": "¿Qué es la Variación?"
+                    "title":"La Combinatoria jamás ha sido tan fácil",
+                    "first": "¿Qué es la Combinatoria?",
+                    "second": "Conceptos importantes en la Combinatoria",
+                    "third": "¿Cómo sé qué método debo usar?",
+                    "forth": "¿Cómo sé si importa el orden?",
+                    "fifth": "¿Cómo sé si se puede repetir?"
     },
   
     "answers": {
-                "first": "La combinatoria es un área de las matemáticas que se ocupa principalmente del conteo, tanto como un medio como un fin para obtener resultados, y ciertas propiedades de las estructuras finitas. Está estrechamente relacionado con muchas otras áreas de las matemáticas y tiene muchas aplicaciones que van desde la lógica hasta la física estadística y desde la biología evolutiva hasta la informática.",
-                "second": "Una combinación es una técnica matemática que determina el número de arreglos posibles en una colección de elementos donde el orden de la selección no importa. En combinaciones, puede seleccionar los artículos en cualquier orden.",
-                "third":  "Una permutación es un cálculo matemático de la cantidad de formas en que se puede organizar un conjunto en particular, donde el orden del arreglo es importante.",
-                "forth": "Las variaciones son arreglos de selecciones de objetos con o sin repetición, donde importa el orden de los objetos seleccionados."
+                "first": "Es una rama de las matemáticas que estudia los diferentes <strong> métodos </strong> para <strong> contar </strong> las distintas <strong> agrupaciones </strong> o formas de <strong> ordenar </strong> un determinado número de elementos.",
+                "example_title": "Ejemplo:",
+                "example_explanation": "Supongamos que tenemos 3 manzanas de diferentes colores y alguien nos pide que las ordenemos.",
+                "first_order": "Esta podría ser una forma de ordenarlas:",
+                "second_order": "Pero si quisiera, podría hacerlo de la siguiente manera:",
+                "third_order": "Y si las ordenara de todas las formas posibles, tendría algo como esto:",
+                "sum_up": "¿Cuántas formas de ordenar hubo? En este caso hubo <strong> 6 formas diferentes.</strong>",
+                "conclusion": "Esto es lo que se busca en los ejercicios de combinatoria, <strong>saber de cuántas maneras distintas se puede organizar cierto grupo de elementos.</strong>",
+                "n_number": "<strong>Población (n) :</strong> es el número de elementos que se están estudiando.",
+                "r_number":  "<strong>Muestra (r) :</strong> de esos elementos de la población, cuantos elementos se seleccionan para ordenar.",
+                "second_example": "Siguiendo con nuestro ejemplo, en este caso la población (n) sería <strong>3</strong>, porque es el <strong>número total</strong> de manzanas <strong>distintas</strong> del que disponemos. Por otro lado, el número de la muestra (r) <strong>también sería 3</strong>, ya que para formar las distintas combinaciones, estamos utilizando <strong>todos los tipos</strong> de manzanas disponibles.",
+                "what_method": "<strong>¿Importa el orden de mis elementos? ¿Usaré todos los elementos?</strong> Hacerse estas preguntas es importante y nos ayudará a definir que método deberemos usar.",
+                "method_combination": "<strong>Combinación: </strong>no importa el orden de los elementos.",
+                "method_permutation": "<strong>Permutación: </strong>sí importa el orden y se trabaja con todos los elementos",
+                "method_variation": "<strong>Variación: </strong>sí importa el orden pero no se trabaja con todos los elementos."
     },
   
     "footer": {

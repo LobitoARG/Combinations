@@ -1,17 +1,27 @@
 { 
-        "questions" : {
-                        "title":"Combinatorics have never been easier",
-                        "first": "What is Combinatorics?",
-                        "second": "What is Combination?",
-                        "third": "What is Permutation?",
-                        "forth": "What is Variation?"
-                      },
-    
+      "questions": {
+                  "title":"La Combinatoria jamás ha sido tan fácil",
+                  "first": "¿Qué es la Combinatoria?",
+                  "second": "Conceptos importantes en la Combinatoria",
+                  "third": "¿Cómo sé qué método debo usar?",
+                  "forth": "¿Cómo sé si importa el orden?",
+                  "fifth": "¿Cómo sé si se puede repetir?"
+                },
+
       "answers": {
-                  "first": "Combinatorics is an area of mathematics primarily concerned with counting, both as a means and an end in obtaining results, and certain properties of finite structures. It is closely related to many other areas of mathematics and has many applications ranging from logic to statistical physics and from evolutionary biology to computer science.",
-                  "second": "A combination is a mathematical technique that determines the number of possible arrangements in a collection of items where the order of the selection does not matter. In combinations, you can select the items in any order.",
-                  "third":  "A permutation is a mathematical calculation of the number of ways a particular set can be arranged, where the order of the arrangement matters.",
-                  "forth": "Variations are arrangements of selections of objects with or without repetition, where the order of the selected objects matters."
+                  "first": "It's a branch of mathematics which studies different <strong> methods </strong> para contar las distintas agrupaciones o formas de ordenar un determinado número de elementos.",
+                  "example_title": "Ejemplo:",
+                  "example_explanation": "Supongamos que tenemos 3 manzanas de diferentes colores y alguien nos pide que las ordenemos.",
+                  "first_order": "Esta podría ser una forma de ordenarlas:",
+                  "second_order": "Pero si quisiera, podría hacerlo de la siguiente manera:",
+                  "third_order": "Y si las ordenara de todas las formas posibles, tendría algo como esto:",
+                  "sum_up": "¿Cuántas formas de ordenar hubo? En este caso hubo 6 formas diferentes. Esto es lo que se busca en los ejercicios de combinatoria, saber de cuántas maneras distintas se puede organizar cierto grupo de elementos.",
+                  "n_number": "Población (n) : es el número de elementos que se están estudiando.",
+                  "r_number":  "Muestra (r) : de esos elementos de la población, cuantos elementos se seleccionan para ordenar.",
+                  "second_example": "Siguiendo con nuestro ejemplo, en este caso la población (n) sería 3, porque es el número total de manzanas distintas del que disponemos. Por otro lado, el número de la muestra (r) también sería 3, ya que para formar las distintas combinaciones estamos utilizando los 3 tipos de manzanas.",
+                  "method_combination": "Combinación: ",
+                  "method_permutation": "Permutación: ",
+                  "method_variation": "Variación: "
                 },
     
       "footer": {
