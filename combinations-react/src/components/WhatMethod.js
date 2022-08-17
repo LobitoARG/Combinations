@@ -25,6 +25,10 @@ export default function WhatMethod(props) {
               <p className='answer'> {t('answers.method_variation')} </p>
             </Trans>
 
+            <Trans i18nKey="variation">
+              <p className='answer_explanation'> {t('answers.use_permutation')} </p>
+            </Trans>
+
         </div>
     </>
   );
