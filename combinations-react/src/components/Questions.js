@@ -29,8 +29,10 @@ export default function Questions(props) {
 
       <IsOrderImportant
                 question = {t('questions.forth')}
+                step_one = {t('answers.step_one')}
+                step_two = {t('answers.step_two')}
+                order_example = {t('answers.order_example')}
       ></IsOrderImportant>
-
     </div>
   );
 }
