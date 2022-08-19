@@ -140,18 +140,18 @@
 
 .numbers{
     max-width: 400px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     color: hsl(202, 84%, 10%);
     margin: 0 auto;
-    background-color: red;
 }
 
-.numbers div{
-    background-color: blue;
+.numbers div:last-child{
+    margin-top: 30px;
 }
 
 .numbers div input{
@@ -160,7 +160,6 @@
     margin: 10px 0 0 0;
     border-radius: 5px;
     border:none;
-    background-color: yellow;
 } 
 
 .calculate-button{
@@ -366,5 +365,14 @@
 
 @media (min-width: 450px){
 
+    /*Main Calc*/
+    .numbers{
+        grid-template-columns: 48% 48%;
+        justify-content: space-between;
+    }
+    
+    .numbers div:last-child{
+        margin-top: 0;
+    }
 
 }
