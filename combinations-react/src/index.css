@@ -113,20 +113,26 @@
     padding: 0 0 15px 0;
     max-width: 500px;
     margin: 0 auto;
-    display: flex;
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content:space-between;
 }
 
-.options button{
+.options div button{
     padding: 15px;
-    width: 10em;
+    width: 100%;
     border: none;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.4);
-    font-size: 15px;
+    font-size: 90%;
     font-family: 'Montserrat', sans-serif;
     color: hsl(202, 84%, 10%);
     font-weight: 600;
+}
+
+.options div{
+    
 }
 
 
@@ -140,8 +146,9 @@
 
 .numbers{
     max-width: 400px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
@@ -149,13 +156,17 @@
     margin: 0 auto;
 }
 
+.numbers div:last-child{
+    margin-top: 30px;
+}
+
 .numbers div input{
     padding: 8px;
-    width: 180px;
+    width: 95%;
     margin: 10px 0 0 0;
     border-radius: 5px;
     border:none;
-}
+} 
 
 .calculate-button{
     text-align: center;
@@ -360,5 +371,14 @@
 
 @media (min-width: 450px){
 
+    /*Main Calc*/
+    .numbers{
+        grid-template-columns: 48% 48%;
+        justify-content: space-between;
+    }
+    
+    .numbers div:last-child{
+        margin-top: 0;
+    }
 
 }
