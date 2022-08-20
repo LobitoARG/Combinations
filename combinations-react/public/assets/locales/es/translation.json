@@ -6,7 +6,7 @@
                     "second": "Conceptos importantes en la Combinatoria",
                     "third": "¿Cómo sé qué método debo usar?",
                     "forth": "¿Cómo sé si importa el orden?",
-                    "fifth": "¿Cómo sé si se puede repetir?"
+                    "fifth": "Repetición"
     },
   
     "answers": {
@@ -29,7 +29,10 @@
                 "order": "Para responder esta pregunta podemos ayudarnos de los siguientes pasos:",
                 "step_one": "1_ Hacer 2 combinaciones diferentes con los mismos elementos.",
                 "step_two": "2_ Preguntarse: ¿Son diferentes?",
-                "order_example": "Volviendo con las manzanas, nos importa el orden porque nuestro objetivo es saber cuántas combinaciones distintas podemos obtener teniendo en cuenta el orden de los colores, aunque sean siempre los mismos 3."
+                "step_one_example": "1_",
+                "order_example": "2_ En este caso son diferentes porque lo que estamos evaluando es el orden de los colores aunque sean siempre los mismos 3. Por lo tanto, sí importa el orden.",
+                "repetition_concept": "Los métodos con repetición de un conjunto son las distintas formas en que se puede hacer una selección de elementos de un conjunto dado, permitiendo que las <strong>selecciones</strong> puedan <strong>repetirse.</strong>",
+                "repetition_example": "Una vez que hemos decidido si usaremos combinación, permutación o variación, debemos preguntarnos si nuestros elementos pueden o no repetirse. En nuestro ejemplo de las manzanas, podríamos suponer que sólo disponemos de un ejemplar de cada uno y nos es imposible aumentar la cantidad. Entonces <strong>no se pueden repetir</strong> nuestros elementos."
     },
   
     "footer": {
