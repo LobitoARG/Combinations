@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import ImportantConcepts from './ImportantConcepts';
 import WhatMethod from './WhatMethod';
 import IsOrderImportant from './IsOrderImportant';
+import Repetition from './Repetition';
 
 export default function Questions(props) {
 
@@ -31,8 +32,13 @@ export default function Questions(props) {
                 question = {t('questions.forth')}
                 step_one = {t('answers.step_one')}
                 step_two = {t('answers.step_two')}
+                step_one_example = {t('answers.step_one_example')}
                 order_example = {t('answers.order_example')}
       ></IsOrderImportant>
+
+      <Repetition
+                question = {t('questions.fifth')}
+      ></Repetition>
     </div>
   );
 }

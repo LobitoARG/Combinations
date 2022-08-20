@@ -67,7 +67,7 @@
 /* MAIN */
 
 .main-app{
-    height: 100vh;
+    min-height: 100vh;
     transition: all .4s; 
 }
 
@@ -129,10 +129,6 @@
     font-family: 'Montserrat', sans-serif;
     color: hsl(202, 84%, 10%);
     font-weight: 600;
-}
-
-.options div{
-    
 }
 
 
@@ -224,6 +220,12 @@
     font-size: 17px;
 }
 
+.divisory_line{
+    border-top: hsla(202, 84%, 15%, 0.414) 0.1px solid;
+    width: 240px;
+    margin: 0 auto;
+}
+
 /* Section Q&A */
 
 .title-questions{
@@ -311,11 +313,10 @@
     list-style: none;
 }
 
-.list-apples-div{
+.first-second-apple{
     display: grid;
-    grid-template-columns: 5% 12% 12% 12% 8% 5% 12% 12% 12%;
-    grid-gap: 10px;
-    max-width:650px;
+    grid-template-columns: 10% 30% 30% 30%;
+    max-width:350px;
     margin: 0 auto;
 }
 
@@ -381,4 +382,12 @@
         margin-top: 0;
     }
 
+}
+
+@media (min-width: 600px){
+
+    /* Apples */
+    .list-apples-div{
+        display: flex;
+    }
 }

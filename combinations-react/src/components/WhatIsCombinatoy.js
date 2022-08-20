@@ -33,13 +33,9 @@ export default function WhatIsCombinatory(props) {
 
             <p className='answer'> {props.third_order} </p>
 
-            <div className='main-apples-div'>
-            <ApplesList
-                color1 = "firstApple"
-                color2 = "secondApple"
-                color3 = "thirdApple"
-            ></ApplesList>
-            </div>
+            
+            <ApplesList></ApplesList>
+          
 
             <Trans i18nKey="sum_up">
               <p className='answer'>{t('answers.sum_up')}</p>
