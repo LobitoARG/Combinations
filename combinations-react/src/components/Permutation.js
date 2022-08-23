@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import CalculateButton from './CalculateButton';
 
 export default function Permutation() 
 {
@@ -53,9 +54,7 @@ export default function Permutation()
   
         </div>
   
-          <div className='calculate-button'>
-            <button type='submit'>{t('calc.button')}</button>
-          </div>
+        <CalculateButton></CalculateButton>
   
       </form>
     </div>

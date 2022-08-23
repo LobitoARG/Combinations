@@ -17,6 +17,21 @@
 
 /* DARK/LIGHT MODE*/
 
+#trueCalcButton{
+    animation: moveDown ease-in-out 0.2s;
+    animation-fill-mode: both;
+}
+
+@keyframes moveDown {
+    0% { }
+    50% { transform:translateY(5px); box-shadow:rgba(255, 255, 255, 0.5) 0px 6px 0px}
+    100% { }
+}
+
+#true{
+    background-color: white;
+    color: black;
+}
 
 #light{
     background-color: #eceff1;
@@ -169,6 +184,7 @@
 }
 
 .calculate-button button{
+    position:relative;
     background-color: black;
     color: #fff;
     font-size: 20px;
@@ -178,7 +194,7 @@
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    box-shadow: hsla(226, 84%, 10%, 0.034) 0px 6px 0px;
+    box-shadow: hsla(226, 84%, 10%, 0.152) 0px 6px 0px;
 }
 
 .result{
@@ -229,9 +245,10 @@
 /* Section Q&A */
 
 .title-questions{
-    font-size: 1.5em;
+    font-size: 1.9em;
     font-weight: 600;
-    padding-top: 20px;
+    margin:0;
+    padding-top: 70px;
     color:hsl(202, 84%, 15%);
 }
 
@@ -243,7 +260,7 @@
 }
 
 .question-block{
-    padding: 40px 0 0 0;
+    padding: 30px 0 0 0;
 }
 
 .question{
