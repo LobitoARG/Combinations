@@ -1,10 +1,11 @@
 import React from 'react'
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import CalculateButton from './CalculateButton';
 
 export default function Variation() {
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const [result, setResult] = useState(['']);
 
@@ -54,9 +55,7 @@ export default function Variation() {
   
         </div>
   
-          <div className='calculate-button'>
-            <button type='submit'>{t('calc.button')}</button>
-          </div>
+        <CalculateButton></CalculateButton>
   
       </form>
     </div>

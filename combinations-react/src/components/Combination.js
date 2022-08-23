@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import CalculateButton from './CalculateButton';
 
 export default function Combination() {
 
@@ -34,9 +35,6 @@ export default function Combination() {
   }
 
 
-
-
-
   return (
     <>
     <div className='calc-box'>
@@ -57,9 +55,7 @@ export default function Combination() {
   
         </div>
   
-          <div className='calculate-button'>
-            <button type='submit'>{t('calc.button')}</button>
-          </div>
+      <CalculateButton></CalculateButton>
   
       </form>
     </div>
