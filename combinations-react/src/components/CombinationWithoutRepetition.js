@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import CalculateButton from './CalculateButton';
 
-export default function Variation() {
+export default function CombinationWithoutRepetition() {
 
   const { t } = useTranslation();
 
@@ -23,22 +23,22 @@ export default function Variation() {
       return numberToFactorial * recursiveFactorial(numberToFactorial-1)
     }
 
-    function variationFormula(){
-      const result = recursiveFactorial(totalNumber) / recursiveFactorial(totalNumber - groupNumber);
+    function combinationFormula(){
+      const result = recursiveFactorial(totalNumber) / (recursiveFactorial(totalNumber - groupNumber) * recursiveFactorial(groupNumber));
       return result
     }
 
-    setResult(variationFormula());
+    setResult(combinationFormula());
 
     e.target.total.value = '';
     e.target.total2.value = '';
   }
 
 
-
   return (
     <>
     <div className='calc-box'>
+
       <form onSubmit={submitHandler}>
   
         <div className='numbers'>
@@ -55,13 +55,13 @@ export default function Variation() {
   
         </div>
   
-        <CalculateButton></CalculateButton>
+      <CalculateButton></CalculateButton>
   
       </form>
     </div>
   
     <div className='div-result'>
-          <h2 className='result'>{t('calc.result')} {result} </h2>
+          <h2 className='result'>{t('calc.result')} {result}</h2>
     </div>
     
     </>

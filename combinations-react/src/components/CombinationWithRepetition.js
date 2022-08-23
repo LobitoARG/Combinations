@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import CalculateButton from './CalculateButton';
 
-export default function Combination() {
+export default function CombinationWithRepetition() {
 
   const { t } = useTranslation();
 
@@ -23,12 +23,12 @@ export default function Combination() {
       return numberToFactorial * recursiveFactorial(numberToFactorial-1)
     }
 
-    function combinationFormula(){
-      const result = recursiveFactorial(totalNumber) / (recursiveFactorial(totalNumber - groupNumber) * recursiveFactorial(groupNumber));
+    function combinationWithRepetitionFormula(){
+      const result = recursiveFactorial(totalNumber + (groupNumber - 1)) / (recursiveFactorial(totalNumber - 1) * recursiveFactorial(groupNumber));
       return result
     }
 
-    setResult(combinationFormula());
+    setResult(combinationWithRepetitionFormula());
 
     e.target.total.value = '';
     e.target.total2.value = '';
