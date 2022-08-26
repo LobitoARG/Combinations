@@ -18,7 +18,7 @@
 /* DARK/LIGHT MODE*/
 
 #light{
-    background-color: #eceff1;
+    background-color: #82b1ff;
 }
 
 #dark{
@@ -53,6 +53,61 @@
 #dark .settings button{
     color: #eceff1;
 }
+
+#dark .nav-div{
+    border-bottom: solid 1px #eceff1;
+}
+
+#dark .title-questions{
+    color: #b39ddb;
+    text-align: center;
+}
+
+#dark .question{
+    color: #b39ddb;
+}
+
+#dark .answer{
+    color: #fafafa;
+    opacity: 87%;
+}
+
+#dark .answer_explanation::before{
+    border-top: solid 4px #b3e5fc;
+    opacity: 1;
+}
+
+#dark p .answer_explanation{
+    color: #fafafa;
+    opacity: 60%;
+}
+
+#dark #logo-github{
+    color: #fafafa;
+}
+
+#dark .firstApple{
+    color: #fafafa;
+}
+
+#dark .secondApple{
+    color: #afc2cb;
+}
+
+#dark .thirdApple{
+    color: #383838;
+}
+
+#dark .made-by {
+    color: #fafafa;
+    opacity: 87%;
+}
+
+#dark .all-rights{
+    color: #fafafa;
+    opacity: 87%;
+}
+
 
 /* NAVBAR */
 .settings{
@@ -138,6 +193,10 @@
 #true{
     background-color: white;
     color: black;
+}
+
+#dark #true{
+    background-color: rgba(255, 255, 255, 0.4)
 }
 
 #li-options{
@@ -257,9 +316,9 @@
 
 .questions-section{
     font-family: 'Montserrat', sans-serif;
-    width: 95%;
+    /* width: 95%;
     max-width: 650px;
-    margin: 0 auto;
+    margin: 0 auto; */
 }
 
 .question-block{
@@ -285,7 +344,7 @@
     font-size: 17px;
     font-weight: 400;
     padding: 0;
-    margin: 40px 0;
+    margin: 40px 0; 
     color:hsl(202, 12%, 42%)
 }
 
@@ -349,16 +408,16 @@
 
 /* Section Footer */
 
+/*
 .footer-box{
-    margin-top: 5
-    0px;
-}
+    margin-top: 50px;
+}*/
 
 .div-footer-box{
     text-align: center;
-    border-top: solid 1px hsla(201, 12%, 42%, 0.384);
-    margin-top: 30px;
-    padding: 20px 0 0 0;
+    /* border-top: solid 1px hsla(201, 12%, 42%, 0.384); 
+    margin-top: 30px; */
+    padding: 1vh 0 0 0;
     font-family: 'Montserrat', sans-serif;
 }
 
